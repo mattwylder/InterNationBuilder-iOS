@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct InterNationBuilder_iosApp: App {
+struct InterNationBuilderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTabView()
         }
     }
 }
