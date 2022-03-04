@@ -29,8 +29,10 @@
 		E260069827D18B1F007D4B1E /* PaperSaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260069727D18B1F007D4B1E /* PaperSaleViewModel.swift */; };
 		E260069A27D18F0A007D4B1E /* MockRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260069927D18F0A007D4B1E /* MockRequestHandler.swift */; };
 		E260069D27D19082007D4B1E /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260069C27D19082007D4B1E /* Requestable.swift */; };
-		E260069F27D19150007D4B1E /* papersales.json in Resources */ = {isa = PBXBuildFile; fileRef = E260069E27D19150007D4B1E /* papersales.json */; };
+		E260069F27D19150007D4B1E /* paper_sales.json in Resources */ = {isa = PBXBuildFile; fileRef = E260069E27D19150007D4B1E /* paper_sales.json */; };
 		E26006A727D1936C007D4B1E /* InterNationBuilder_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26006A627D1936C007D4B1E /* InterNationBuilder_iosTests.swift */; };
+		E26006B127D28A5E007D4B1E /* contacts_list.json in Resources */ = {isa = PBXBuildFile; fileRef = E26006B027D28A5E007D4B1E /* contacts_list.json */; };
+		E26006B527D2917A007D4B1E /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = E26006B427D2917A007D4B1E /* contact.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +69,11 @@
 		E260069727D18B1F007D4B1E /* PaperSaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperSaleViewModel.swift; sourceTree = "<group>"; };
 		E260069927D18F0A007D4B1E /* MockRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestHandler.swift; sourceTree = "<group>"; };
 		E260069C27D19082007D4B1E /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		E260069E27D19150007D4B1E /* papersales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = papersales.json; sourceTree = "<group>"; };
+		E260069E27D19150007D4B1E /* paper_sales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = paper_sales.json; sourceTree = "<group>"; };
 		E26006A427D1936C007D4B1E /* InterNationBuilder iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InterNationBuilder iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26006A627D1936C007D4B1E /* InterNationBuilder_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterNationBuilder_iosTests.swift; sourceTree = "<group>"; };
+		E26006B027D28A5E007D4B1E /* contacts_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contacts_list.json; sourceTree = "<group>"; };
+		E26006B427D2917A007D4B1E /* contact.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +121,8 @@
 				E25682AB27C3FFDF00DDF080 /* Models */,
 				E25682B427C40E0100DDF080 /* Utilities */,
 				E25682A127C3FF2C00DDF080 /* Assets.xcassets */,
+				E26006AF27D28A3D007D4B1E /* MockRequests */,
 				E25682A327C3FF2C00DDF080 /* Preview Content */,
-				E260069E27D19150007D4B1E /* papersales.json */,
 			);
 			path = "InterNationBuilder ios";
 			sourceTree = "<group>";
@@ -226,6 +230,16 @@
 			path = "InterNationBuilder iosTests";
 			sourceTree = "<group>";
 		};
+		E26006AF27D28A3D007D4B1E /* MockRequests */ = {
+			isa = PBXGroup;
+			children = (
+				E260069E27D19150007D4B1E /* paper_sales.json */,
+				E26006B027D28A5E007D4B1E /* contacts_list.json */,
+				E26006B427D2917A007D4B1E /* contact.json */,
+			);
+			path = MockRequests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,8 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26006B127D28A5E007D4B1E /* contacts_list.json in Resources */,
+				E26006B527D2917A007D4B1E /* contact.json in Resources */,
 				E25682A527C3FF2C00DDF080 /* Preview Assets.xcassets in Resources */,
-				E260069F27D19150007D4B1E /* papersales.json in Resources */,
+				E260069F27D19150007D4B1E /* paper_sales.json in Resources */,
 				E25682A227C3FF2C00DDF080 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

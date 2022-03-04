@@ -26,8 +26,13 @@ struct ContactListItem: Codable, Identifiable {
                                         supportLevel: .weakSupport,
                                         address: .mock)
     
-    enum SupportLevel: Int, Codable {
-        case strongSupport = 1, weakSupport, undecided, weakOppose, strongOppose, unidentified
+    enum SupportLevel: String, Codable {
+        case strongSupport = "strong_support"
+        case weakSupport = "weak_support"
+        case undecided = "undecided"
+        case weakOppose = "weak_oppose"
+        case strongOppose = "strong_oppose"
+        case unidentified = "unidentified"
     }
     
     var id: String? //TODO: UUID?

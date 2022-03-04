@@ -1,0 +1,17 @@
+[
+    {
+        "id": "8E3DB5BA-67D4-4747-8FEE-B3E18E56240B",
+        "first_name": "Jordan",
+        "last_name": "Quinn",
+        "phone": "206-334-2342",
+        "email": "jordan@quinn.com",
+        "support_level": "strong_support",
+        "address": {
+            "address1": "1000 E Aloha St",
+            "address2": "7",
+            "city": "Seattle",
+            "state_province": "WA",
+            "postal_code": "98102"
+            }
+    }
+]
