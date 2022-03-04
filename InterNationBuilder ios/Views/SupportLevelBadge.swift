@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SupportLevelBadge: View {
-    let supportLevel: ContactListItem.SupportLevel
+    let supportLevel: SupportLevel
     
     private var bubbleColor: Color {
         switch supportLevel {
@@ -22,7 +22,7 @@ struct SupportLevelBadge: View {
     }
     
     var body: some View {
-        Text("\(supportLevel.rawValue)")
+        Text("\(supportLevel.number)")
             .font(.caption)
             .fontWeight(.black)
             .padding(6)

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactDetailView: View {
     @ObservedObject var viewModel: ContactDetailViewModel
     
-    init(_ contact: ContactListItem) {
+    init(_ contact: Contact) {
         self.viewModel = ContactDetailViewModel(contact)
     }
     
@@ -19,7 +19,7 @@ struct ContactDetailView: View {
             HStack {
                 Text(viewModel.contact.fullName)
                     .font(.title2)
-                SupportLevelBadge(supportLevel: viewModel.contact.supportLevel!)
+                SupportLevelBadge(supportLevel: viewModel.contact.supportLevel)
             }
             HStack {
                 Button(action: viewModel.sellPaper) {
@@ -54,7 +54,7 @@ struct ContactDetailView: View {
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ContactDetailView(ContactListItem.jordo)
+            ContactDetailView(Contact.jordo)
         }
     }
 }

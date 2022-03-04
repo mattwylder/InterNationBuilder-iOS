@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 final class ContactsList: ObservableObject {
-    @Published var contacts: [ContactListItem]
+    @Published var contacts: [Contact]
     
     init() {
-        self.contacts = [ContactListItem.jordo, ContactListItem.champs]
+        self.contacts = [Contact.jordo]
     }
 }

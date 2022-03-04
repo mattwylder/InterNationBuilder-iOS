@@ -13,15 +13,8 @@ final class CreateContactViewModel: ObservableObject {
     @Published var phone: String = ""
     @Published var email: String = ""
     
-    //TODO: Refactor this out into some other object owned by view? presenter or whatever?
     func submitContact() async throws {
-        let contact = ContactListItem(firstName: firstName,
-                              lastName: lastName.isEmpty ? nil : lastName,
-                              phone: phone.isEmpty ? nil : phone,
-                              email: email.isEmpty ? nil : email,
-                              supportLevel: nil,
-                              address: nil)
-
+        //TODO: implement
     }
     
 }

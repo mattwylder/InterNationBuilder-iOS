@@ -1,0 +1,62 @@
+[
+    {
+        "id": "8E3DB5BA-67D4-4747-8FEE-B3E18E56240B",
+        "first_name": "Jordan",
+        "last_name": "Quinn",
+        "support_level": "strong_support",
+        "emails": {
+            "home" : "jordan@quinn.com",
+            "work": "jq@sa.org"
+        },
+        "phones": {
+            "mobile": "206-323-4232",
+            "work": "999-343-3245"
+        },
+        "addresses": {
+            "registered": {
+                "address1": "1000 E Aloha St",
+                "address2": "7",
+                "city": "Seattle",
+                "state_province": "WA",
+                "postal_code": "98102"
+            },
+            "mailing": {
+                "address1": "1000 E Aloha St",
+                "address2": "7",
+                "city": "Seattle",
+                "state_province": "WA",
+                "postal_code": "98102"
+            }
+        }
+    },
+    {
+        "id": "8E3DB5BA-67D4-4747-8FEE-B3E18E56240C",
+        "first_name": "Sarah",
+        "last_name": "Champernowne",
+        "support_level": "unidentified",
+        "emails": {
+            "home" : "sarah@champs.com",
+            "work": "sc@sa.org"
+        },
+        "phones": {
+            "mobile": "206-989-7685",
+            "work": "567-454-5424"
+        },
+        "addresses": {
+            "registered": {
+                "address1": "1000 E Aloha St",
+                "address2": "7",
+                "city": "Seattle",
+                "state_province": "WA",
+                "postal_code": "98102"
+            },
+            "mailing": {
+                "address1": "1000 E Aloha St",
+                "address2": "7",
+                "city": "Seattle",
+                "state_province": "WA",
+                "postal_code": "98102"
+            }
+        }
+    }
+]

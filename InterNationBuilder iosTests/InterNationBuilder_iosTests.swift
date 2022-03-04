@@ -22,21 +22,12 @@ class InterNationBuilder_iosTests: XCTestCase {
     
     func testMockRequestHandler_contacts() async throws {
         let requestHandler = MockRequestHandler()
-        let result: Result<[ContactListItem], Error> = try await requestHandler.get(from: "contacts_list")
-        guard case .success(let contacts) = result, let first = contacts.first else {
+        let result: Result<[Contact], Error> = try await requestHandler.get(from: "contacts")
+        guard case .success(let contacts) = result else {
             XCTFail()
             return
         }
-        XCTAssert(first.firstName == "Jordan")
-    }
-    
-    func testMockRequestHandler_contact() async throws {
-        let requestHandler = MockRequestHandler()
-        let result: Result<ContactExpanded, Error> = try await requestHandler.get(from: "contact")
-        switch result {
-        case .success(let contact): break
-        case .failure(let error): throw error
-        }
+        XCTAssert(contacts.count == 2)
     }
 
 }

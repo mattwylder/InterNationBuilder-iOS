@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ContactRow: View {
-    let contact: ContactListItem
+    let contact: Contact
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("\(contact.firstName) \(contact.lastName!)")
+                Text("\(contact.firstName) \(contact.lastName)")
                     .font(.title2)
                     .multilineTextAlignment(.leading)
                 Text(contact.phone!)
                 Text(contact.email!)
             }
             Spacer()
-            SupportLevelBadge(supportLevel: contact.supportLevel!)
+            SupportLevelBadge(supportLevel: contact.supportLevel)
         }
     }
 }
