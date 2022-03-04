@@ -11,7 +11,7 @@ import XCTest
 class InterNationBuilder_iosTests: XCTestCase {
 
     func testMockRequestHandler_papersales() async throws {
-        let mockRequestHandler = MockRequestHandler()
+        let mockRequestHandler = MockRequestHandler(waitTime: 0)
         let result: Result<[PaperSaleListItem], Error> = try await mockRequestHandler.get(from: "paper_sales")
         guard case .success(let paperSales) = result, let first = paperSales.first else {
             XCTFail()
@@ -21,7 +21,7 @@ class InterNationBuilder_iosTests: XCTestCase {
     }
     
     func testMockRequestHandler_contacts() async throws {
-        let requestHandler = MockRequestHandler()
+        let requestHandler = MockRequestHandler(waitTime: 0)
         let result: Result<[Contact], Error> = try await requestHandler.get(from: "contacts")
         guard case .success(let contacts) = result else {
             XCTFail()

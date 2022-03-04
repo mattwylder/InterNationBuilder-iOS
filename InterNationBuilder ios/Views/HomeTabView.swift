@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    let requestHandler: Requestable
+    init(_ requestHandler: Requestable) {
+        self.requestHandler = requestHandler
+    }
     var body: some View {
         TabView {
             NavigationView {
-                ContactsListView()
+                ContactsListView(requestHandler)
             }.tabItem {
                 Image(systemName: "person.3")
                 Text("Contacts")
@@ -29,6 +33,6 @@ struct HomeTabView: View {
 
 struct HomeTabView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTabView()
+        HomeTabView(MockRequestHandler())
     }
 }

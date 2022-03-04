@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct InterNationBuilderApp: App {
+    let requestHandler: Requestable = MockRequestHandler(waitTime: 1)
     var body: some Scene {
         WindowGroup {
-            HomeTabView()
+            HomeTabView(requestHandler)
         }
     }
 }
