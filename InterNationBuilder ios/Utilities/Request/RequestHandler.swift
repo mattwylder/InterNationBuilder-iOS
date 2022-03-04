@@ -35,7 +35,7 @@ struct RequestHandler {
         }
     }
     
-    static func post<T: Codable>(to endpoint: Endpoint, object: T, host: APIHost = .heroku) async throws {
+    func post<T: Codable>(to endpoint: Endpoint, object: T, host: APIHost = .heroku) async throws {
         let url = URL(string: host.baseURL + endpoint.rawValue)!
         var request = URLRequest(url: url)
         
@@ -52,7 +52,7 @@ struct RequestHandler {
         }
     }
 
-    static func get<T: Codable>(endpoint: Endpoint, host: APIHost = .heroku) async throws -> T {
+    func get<T: Codable>(endpoint: Endpoint, host: APIHost = .heroku) async throws -> T {
         let urlString = host.baseURL + endpoint.rawValue
         let url = URL(string: urlString)!
         

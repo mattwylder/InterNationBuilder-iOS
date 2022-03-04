@@ -21,11 +21,7 @@ final class CreateContactViewModel: ObservableObject {
                               email: email.isEmpty ? nil : email,
                               supportLevel: nil,
                               address: nil)
-        do {
-        try await RequestHandler.post(to: .contacts, object: contact, host: .heroku)
-        } catch {
-            print("oh no")
-        }
+
     }
     
 }

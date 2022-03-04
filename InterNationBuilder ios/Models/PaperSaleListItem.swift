@@ -10,14 +10,14 @@ import Foundation
 struct PaperSaleListItem: Codable, Identifiable {
     
     static let mock1 = PaperSaleListItem(id: UUID(),
-                                         contactID: UUID(),
+                                         purchaserId: UUID(),
                                          date: Date(),
                                          purchaserName: "Jordan Quinn",
                                          purchaserEmail: "jq@sa.org",
                                          purchaserPhone: "984-323-2344")
     
     let id: UUID
-    let contactID: UUID
+    let purchaserId: UUID
     let date: Date
     let purchaserName: String
     let purchaserEmail: String
