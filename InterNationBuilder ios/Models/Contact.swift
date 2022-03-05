@@ -12,8 +12,8 @@ struct Contact: Codable, Identifiable {
                                firstName: "Jordan",
                                lastName: "Quinn",
                                supportLevel: .strongSupport,
-                               emails: ["Home" : "jordan@quinn.com", "Work": "jq@sa.org"],
-                               phones: ["Mobile": "206-323-4232", "Work": "999-343-3245"],
+                               email: "jordan@quinn.com",
+                               phone: "206-323-4232",
                                addresses: ["Registered": .mock,
                                            "Home": .mock])
     
@@ -21,20 +21,12 @@ struct Contact: Codable, Identifiable {
     let firstName: String
     let lastName: String
     let supportLevel: SupportLevel
-    let emails: [String: String]
-    let phones: [String: String]
+    let email: String
+    let phone: String
     let addresses: [String: Address]
     
     var fullName: String {
         "\(firstName) \(lastName)"
-    }
-    
-    var phone: String? {
-        phones.first?.value
-    }
-    
-    var email: String? {
-        emails.first?.value
     }
     
     var address: Address? {

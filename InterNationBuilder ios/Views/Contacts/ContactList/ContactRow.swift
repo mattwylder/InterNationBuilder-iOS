@@ -16,8 +16,8 @@ struct ContactRow: View {
                 Text("\(contact.firstName) \(contact.lastName)")
                     .font(.title2)
                     .multilineTextAlignment(.leading)
-                Text(contact.phone!)
-                Text(contact.email!)
+                Text(contact.phone)
+                Text(contact.email)
             }
             Spacer()
             SupportLevelBadge(supportLevel: contact.supportLevel)

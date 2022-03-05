@@ -29,12 +29,12 @@ struct ContactDetailView: View {
                 }
             }
             List {
-                ContactInfoSection(name: "Email", array: viewModel.emails) { email in
-                    Text(email)
+                Section("Email") {
+                    Text(viewModel.contact.email)
                 }
                 
-                ContactInfoSection(name: "Phone", array: viewModel.phones) { number in
-                    Text(number)
+                Section("Phone") {
+                    Text(viewModel.contact.phone)
                 }
                 
                 ContactInfoSection(name: "Address", array: viewModel.addresses) { address in

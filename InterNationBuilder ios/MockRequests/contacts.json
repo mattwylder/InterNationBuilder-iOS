@@ -4,14 +4,8 @@
         "first_name": "Jordan",
         "last_name": "Quinn",
         "support_level": "strong_support",
-        "emails": {
-            "home" : "jordan@quinn.com",
-            "work": "jq@sa.org"
-        },
-        "phones": {
-            "mobile": "206-323-4232",
-            "work": "999-343-3245"
-        },
+        "email": "jordan@quinn.com",
+        "phone":"206-323-4232",
         "addresses": {
             "registered": {
                 "address1": "1000 E Aloha St",
@@ -34,14 +28,8 @@
         "first_name": "Sarah",
         "last_name": "Champernowne",
         "support_level": "unidentified",
-        "emails": {
-            "home" : "sarah@champs.com",
-            "work": "sc@sa.org"
-        },
-        "phones": {
-            "mobile": "206-989-7685",
-            "work": "567-454-5424"
-        },
+        "email": "sarah@champs.com",
+        "phone": "206-989-7685",
         "addresses": {
             "registered": {
                 "address1": "1000 E Aloha St",

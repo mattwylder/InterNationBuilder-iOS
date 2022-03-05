@@ -18,14 +18,6 @@ final class ContactDetailViewModel: ObservableObject {
         return "\(contact.firstName) \(contact.lastName)"
     }
     
-    var emails: [(String, String)] {
-        return tupleArray(from: contact.emails)
-    }
-    
-    var phones: [(String, String)] {
-        return tupleArray(from: contact.phones)
-    }
-    
     var addresses: [(String, Address)] {
         return tupleArray(from: contact.addresses)
     }
